@@ -30,9 +30,18 @@ export const Works = () => {
       title: 'Clear-Pixel', 
       description: `used camera resale application
       •Users can view a list of used cameras and order items immediately. Users will see all added products on the "My Orders"
-      page. And users can delete any product from there.`,
+      page. And users can delete any product from there.
+      •Sellers can add used cameras for sale, and also view my products, which can be deleted. And the seller can Advertise his
+      added product.
+      •Admin will see all sellers and all buyers, he can delete any buyer and seller. admin also verified the seller.`,
       alter: 'Clear-Pixel',
       image: `${clearPixel}`,
+      technologies : "React js, Tailwind CSS, Firebase, MongoDB, Express, Rest API's",
+      projectLink : "https://autolines-fcc93.web.app/",
+      imageOne : "https://i.ibb.co/DgpBzTx/Screenshot-1.png",
+      imageTwo : "https://i.ibb.co/QmqRWQt/Screenshot-2.png",
+      imageThree : "https://i.ibb.co/jV6cwTk/Screenshot-3.png",
+      imageFour : "https://i.ibb.co/jV6cwTk/Screenshot-3.png",
     },
     { 
       id: 2,
@@ -40,10 +49,28 @@ export const Works = () => {
       description: `It is a niche website, a chef can serve different food items.
       •The owner can add his/her service. And he can see the comments on his service
       •Users can comment and feed. also, delete comments. And user can see other comments.
+      •users can see all comments on the page "my review"
       `,
       alter: 'crumbCooking Project',
       image: `${crumbCooking}`,
+      technologies : "React js, Tailwind CSS, Firebase, MongoDB, Express, Rest API's",
+      projectLink : "https://autolines-fcc93.web.app/",
+      imageOne : "https://i.ibb.co/DgpBzTx/Screenshot-1.png",
+      imageTwo : "https://i.ibb.co/QmqRWQt/Screenshot-2.png",
+      imageThree : "https://i.ibb.co/jV6cwTk/Screenshot-3.png",
+      imageFour : "https://i.ibb.co/jV6cwTk/Screenshot-3.png",
     },
+  //   {
+  //     id : 4,
+  //     "projectName" : "Autolines",
+  //     "imageOne" : "https://i.ibb.co/DgpBzTx/Screenshot-1.png",
+  //     "imageTwo" : "https://i.ibb.co/QmqRWQt/Screenshot-2.png",
+  //     "imageThree" : "https://i.ibb.co/jV6cwTk/Screenshot-3.png",
+  //     "imageFour" : "https://i.ibb.co/jV6cwTk/Screenshot-3.png",
+  //     "details" : "This is used car selling and buying website. people can sell and buy their cars easily. Also they can make payment via stripe. Admin will manage everything link payment etc.",
+  //     "technologies" : "React js, Tailwind CSS, Firebase, MongoDB, Express, Rest API's",
+  //     "projectLink" : "https://autolines-fcc93.web.app/"
+  // },
     // { 
     //   id: 3,
     //   title: 'LoFo Project', 
@@ -84,8 +111,10 @@ export const Works = () => {
                 <TextDecrypt text={ project.id + '. ' + project.title } />
               </h3>
               <p className="description">
-                { project.description }
+              {project.description?.length > 100 ? project.description.slice(0, 200) + "..." : project.description}
+                
               </p>
+              <span style={{color: 'blue', fontWeight: '700'}}>Details</span>
             </div>
           </div>
         ))}
