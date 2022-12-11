@@ -8,8 +8,8 @@ import { TextDecrypt } from "../content/TextDecrypt";
 import './Works.css';
 
 // Import ../../assets/recentprojects/
-import Portfolio from '../../assets/recentprojects/react-portfolio.png';
-import Veritru from '../../assets/recentprojects/veritru.png';
+import clearPixel from '../../assets/recentprojects/clear-pixel.png';
+import crumbCooking from '../../assets/recentprojects/crumb-cooking.png';
 import Lofo from '../../assets/recentprojects/lofo.png';
 import Startup from '../../assets/recentprojects/startup.png';
 import Lacalle from '../../assets/recentprojects/lacalle.png';
@@ -27,47 +27,48 @@ export const Works = () => {
   const [projects, setProjects] = useState([
     { 
       id: 1,
-      title: 'React Portfolio', 
-      description: `Designed and developed a ReactJS portfolio 
-      with fancy 3D animations using Three.js for 
-      the background element.`,
-      alter: 'React Portfolio',
-      image: `${Portfolio}`,
+      title: 'Clear-Pixel', 
+      description: `used camera resale application
+      •Users can view a list of used cameras and order items immediately. Users will see all added products on the "My Orders"
+      page. And users can delete any product from there.`,
+      alter: 'Clear-Pixel',
+      image: `${clearPixel}`,
     },
     { 
       id: 2,
-      title: 'VeriTru Project', 
-      description: `An advocacy project website built using
-      MEAN stack with fact-checking tool to promote actions against
-      fake news.`,
-      alter: 'VeriTru Project',
-      image: `${Veritru}`,
+      title: 'Crumb-Cooking Project', 
+      description: `It is a niche website, a chef can serve different food items.
+      •The owner can add his/her service. And he can see the comments on his service
+      •Users can comment and feed. also, delete comments. And user can see other comments.
+      `,
+      alter: 'crumbCooking Project',
+      image: `${crumbCooking}`,
     },
-    { 
-      id: 3,
-      title: 'LoFo Project', 
-      description: `Logistics and Forwarding website built using
-      ReactJS to design and develop its front-end.`,
-      alter: 'LoFo Project',
-      image: `${Lofo}`,
-    },
-    { 
-      id: 4,
-      title: 'Startup Project', 
-      description: `A website portfolio project for the Startup Dev Team
-      built using MEVN stack to demonstrate the CRUD capabilities of the tech stack.`,
-      alter: 'Startup Project',
-      image: `${Startup}`,
-    },
-    { 
-      id: 5,
-      title: 'LaCalle Cafe', 
-      description: `A website project for the La Calle Cafe business
-      built using Wordpress and PHP with integrated SEO tools to help
-      the business ramp up its prospects and lead generation.`,
-      alter: 'Startup Project',
-      image: `${Lacalle}`,
-    },
+    // { 
+    //   id: 3,
+    //   title: 'LoFo Project', 
+    //   description: `Logistics and Forwarding website built using
+    //   ReactJS to design and develop its front-end.`,
+    //   alter: 'LoFo Project',
+    //   image: `${Lofo}`,
+    // },
+    // { 
+    //   id: 4,
+    //   title: 'Startup Project', 
+    //   description: `A website portfolio project for the Startup Dev Team
+    //   built using MEVN stack to demonstrate the CRUD capabilities of the tech stack.`,
+    //   alter: 'Startup Project',
+    //   image: `${Startup}`,
+    // },
+    // { 
+    //   id: 5,
+    //   title: 'LaCalle Cafe', 
+    //   description: `A website project for the La Calle Cafe business
+    //   built using Wordpress and PHP with integrated SEO tools to help
+    //   the business ramp up its prospects and lead generation.`,
+    //   alter: 'Startup Project',
+    //   image: `${Lacalle}`,
+    // },
   ]);
 
   return (

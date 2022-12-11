@@ -20,10 +20,7 @@ const useStyles = makeStyles((theme) => ({
 export const About = () => {
   const classes = useStyles();
   const greetings = "Hello there!";
-  const aboutme = `I'm ${FirstName} ${LastName}, a multidisciplinary 
-                  designer & developer. I'm always down for something new and challenging!
-                  I'm here to help you create beautifully formatted websites. 
-                  My projects mostly includes web development.`;
+  const aboutme = `Hi! I'm Nasar Ahmad. A junior web developer. I have done the Complete Web Development course at Programming Hero. I have a deep interest in web development and Programming in general. I have completed three projects using React js and Node js. Science 2019, I tried multiple things such as Graphics Design, Video Editing, WordPress Development, etc. But I couldn't find my passion until I tried Web Development. After learning some basic HTML, CSS, and JS, I feel like I'm falling in love with programming. In this journey, I realized that I was not improving rapidly, so I enrolled in Programming Hero's Complete Web Development course. Now I am constantly learning new things and evolving every day.`;
 
   return (
     <section id="about">
