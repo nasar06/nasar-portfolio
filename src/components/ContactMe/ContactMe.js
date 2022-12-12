@@ -3,7 +3,7 @@ import ReactJotformEmbed from 'react-jotform-embed';
 
 const ContactMe = () => {
     return (
-        <div>
+        <div id='contact'>
             <ReactJotformEmbed src="https://form.jotform.com/223431664149456" />
         </div>
     );

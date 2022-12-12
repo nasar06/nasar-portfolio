@@ -10,7 +10,7 @@ import './Works.css';
 // Import ../../assets/recentprojects/
 import clearPixel from '../../assets/recentprojects/clear-pixel.png';
 import crumbCooking from '../../assets/recentprojects/crumb-cooking.png';
-import Lofo from '../../assets/recentprojects/lofo.png';
+import QuizMockup from '../../assets/recentprojects/Quiz mockup.png';
 import Startup from '../../assets/recentprojects/startup.png';
 import Lacalle from '../../assets/recentprojects/lacalle.png';
 
@@ -37,11 +37,11 @@ export const Works = () => {
       alter: 'Clear-Pixel',
       image: `${clearPixel}`,
       technologies : "React js, Tailwind CSS, Firebase, MongoDB, Express, Rest API's",
-      projectLink : "https://autolines-fcc93.web.app/",
-      imageOne : "https://i.ibb.co/DgpBzTx/Screenshot-1.png",
-      imageTwo : "https://i.ibb.co/QmqRWQt/Screenshot-2.png",
-      imageThree : "https://i.ibb.co/jV6cwTk/Screenshot-3.png",
-      imageFour : "https://i.ibb.co/jV6cwTk/Screenshot-3.png",
+      projectLink : "https://clear-pixel-56970.web.app/",
+      clientCode : "https://github.com/nasar06/clear-pixel-client",
+      serverCode : "https://github.com/nasar06/clear-pixel-server",
+      imageThree : "",
+      imageFour : "",
     },
     { 
       id: 2,
@@ -54,11 +54,25 @@ export const Works = () => {
       alter: 'crumbCooking Project',
       image: `${crumbCooking}`,
       technologies : "React js, Tailwind CSS, Firebase, MongoDB, Express, Rest API's",
-      projectLink : "https://autolines-fcc93.web.app/",
-      imageOne : "https://i.ibb.co/DgpBzTx/Screenshot-1.png",
-      imageTwo : "https://i.ibb.co/QmqRWQt/Screenshot-2.png",
-      imageThree : "https://i.ibb.co/jV6cwTk/Screenshot-3.png",
-      imageFour : "https://i.ibb.co/jV6cwTk/Screenshot-3.png",
+      projectLink : "https://crumb-cooking.web.app/",
+      clientCode : "https://github.com/nasar06/crumb-cooking-client",
+      serverCode : "https://github.com/nasar06/crumb-cooking-server",
+      imageThree : "",
+      imageFour : "",
+    },
+    { 
+      id: 3,
+      title: 'QUIZ HERO', 
+      description: `This website is programming related Quiz. 
+      `,
+      alter: 'QUIZ HERO Project',
+      image: `${QuizMockup}`,
+      technologies : "React js, Tailwind CSS, react-router",
+      projectLink : "https://jovial-rugelach-ac3f0b.netlify.app/",
+      clientCode : "https://github.com/programming-hero-web-course2/b6-quiz-crackerz-nasar06",
+      serverCode : "",
+      imageThree : "",
+      imageFour : "",
     },
   //   {
   //     id : 4,
@@ -114,7 +128,14 @@ export const Works = () => {
               {project.description?.length > 100 ? project.description.slice(0, 200) + "..." : project.description}
                 
               </p>
-              <span style={{color: 'blue', fontWeight: '700'}}>Details</span>
+              {/* <span style={{color: 'blue', fontWeight: '700'}}>Details</span> */}
+              <div style={{display:'flex', marginBottom: '5px'}}>
+              <a href={project.projectLink} target="_blank" style={{textDecoration: 'none',marginRight: '5px', border: '1px solid white',padding: '2px 5px',borderRadius: '5px', color: 'black', fontWeight: '700'}}>Live Project</a>
+              <a href={project.clientCode} target="_blank" style={{textDecoration: 'none',marginRight: '5px',border: '1px solid white',padding: '2px 5px',borderRadius: '5px', color: 'black', fontWeight: '700'}}>Client Code</a>
+              {project.serverCode && 
+              <a href={project.serverCode} target="_blank" style={{textDecoration: 'none',border: '1px solid white',padding: '2px 5px',borderRadius: '5px', color: 'black', fontWeight: '700'}}>Server Code</a>
+              }
+              </div>
             </div>
           </div>
         ))}
